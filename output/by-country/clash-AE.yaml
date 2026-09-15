@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
+  uuid: 21d11336-4659-448a-a903-e5b7e597ea8a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -39,13 +39,39 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 85.204.107.173
+  server: 85.204.107.181
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
+  skip-cert-verify: false
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  server: 210.152.85.154
+  port: 19364
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /collect/user/products?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +81,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +92,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
 rules:
 - MATCH,PROXIES
