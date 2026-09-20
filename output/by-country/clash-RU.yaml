@@ -10,8 +10,8 @@ proxies:
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: true
+  sni: itsallproxy.quattro-tech.ru
+  skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   server: msk.frkn.org
   port: 443
@@ -19,21 +19,7 @@ proxies:
   type: hysteria2
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 161.104.44.138
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /my/m/note?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
