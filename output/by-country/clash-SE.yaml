@@ -12,14 +12,14 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 13.48.104.64
-  port: 443
+  server: 51.170.190.140
+  port: 45819
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: 2022-blake3-chacha20-poly1305
+  password: yVKPB5WeYxyaTioROYKKNwo3BlzJLFfUpUbI7ue6zVk=
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 51.20.122.188
+  server: 13.48.104.64
   port: 443
   udp: true
   type: ss
