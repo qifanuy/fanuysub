@@ -13,14 +13,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  server: 103.115.109.49
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   server: 160.187.100.109
   port: 443
   udp: true
@@ -28,7 +20,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 127.0.0.1
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   server: 35.201.181.122
   port: 443
   udp: true
@@ -39,7 +31,15 @@ proxies:
     public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
     short-id: 32f66f37df3f58d2
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: qq
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+  server: 103.115.109.49
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/oneclickvpnkeys
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
