@@ -4,24 +4,18 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: 12fbf518-tmm5c0-tzkd63-1jr1u.hk3.hyhuawei.com
-  port: 443
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  server: me17.msjia8844.site
+  port: 7443
   udp: true
   type: hysteria2
-  password: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
-  sni: 12fbf518-tmm5c0-tzkd63-1jr1u.hk3.hyhuawei.com
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: c39e9624-tmm5c0-twnp5a-ahsb.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
-  sni: c39e9624-tmm5c0-twnp5a-ahsb.nw4.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  server: 118.167.235.241
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -30,30 +24,20 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  server: 178.83.46.216
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
