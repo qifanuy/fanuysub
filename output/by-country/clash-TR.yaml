@@ -18,17 +18,11 @@ proxies:
   servername: www.datadoghq.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: best.valaiqm.ir
-  port: 3035
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
   type: vless
-  uuid: a1fb63f7-a942-4010-a830-bc395703a9a4
-  tls: true
-  reality-opts:
-    public-key: Pi3B8-R1-lj8ScFPOTRRER709y9hJ0varDPpMzWhtAo
-    short-id: f2fda64d24c4
-  servername: telewebion.ir
-  client-fingerprint: chrome
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select

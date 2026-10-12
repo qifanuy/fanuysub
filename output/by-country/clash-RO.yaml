@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 77.74.123.107
+  server: 77.74.123.103
   port: 8443
   udp: true
   type: hysteria2
@@ -43,7 +43,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: U83u9OGpvSatIUW7LsWffr
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  server: bogging-eyeteeth-fly.freesocks.work
+  server: 154.46.31.106
   port: 443
   udp: true
   type: ss
