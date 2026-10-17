@@ -5,16 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.64.150.43
-  port: 2052
+  server: 104.21.48.18
+  port: 2053
   udp: true
-  type: vless
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  type: trojan
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  sni: nimm.mpd.cc.cd
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /rain1226
-    headers:
-      Host: eu02.123450908.xyz
+    path: /0962
 proxy-groups:
 - name: PROXIES
   type: select
