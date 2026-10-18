@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  server: 140.238.213.114
-  port: 50160
+  server: 132.243.175.144
+  port: 8388
   udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   server: 138.124.63.224
   port: 8444
@@ -50,6 +49,36 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: c13f29db6a638ad2b211b9ce2669ef27
+- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
+  server: 37.120.222.70
+  port: 8082
+  udp: true
+  type: vless
+  uuid: 59c3c1c7-62d0-4707-9d67-5ff9c008591c
+  tls: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: a0d9dbcb-e1dc-473b-9e01-9805304ad756
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,6 +88,8 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,5 +99,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
 rules:
 - MATCH,PROXIES

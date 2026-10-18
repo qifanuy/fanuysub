@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
       "type": "vless",
@@ -77,6 +73,52 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
+      "server": "37.120.222.70",
+      "server_port": 8082,
+      "uuid": "59c3c1c7-62d0-4707-9d67-5ff9c008591c",
+      "tls": {
+        "enabled": true,
+        "server_name": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 - xiaohe",
+      "server": "45.77.241.190",
+      "server_port": 8441,
+      "uuid": "a0d9dbcb-e1dc-473b-9e01-9805304ad756",
+      "tls": {
+        "enabled": true,
+        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -84,7 +126,9 @@
         "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 04 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 06 - xiaohe"
       ]
     },
     {
@@ -94,7 +138,9 @@
         "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 04 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
