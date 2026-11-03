@@ -5,21 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: www.gptcloudai.com
+  server: www.windowssearchtools.com
   port: 443
   udp: true
   type: vmess
-  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
   alterId: 0
   cipher: auto
   tls: true
-  servername: www.gptcloudai.com
+  servername: www.windowssearchtools.com
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /truth
-    headers:
-      Host: www.gptcloudai.com
 proxy-groups:
 - name: PROXIES
   type: select

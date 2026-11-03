@@ -6,21 +6,18 @@
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "www.gptcloudai.com",
+      "server": "www.windowssearchtools.com",
       "server_port": 443,
-      "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0",
+      "uuid": "ba1116e2-8c2f-4e3d-8e50-c954360cf970",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "www.gptcloudai.com",
+        "server_name": "www.windowssearchtools.com",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/truth",
-        "headers": {
-          "Host": "www.gptcloudai.com"
-        }
+        "path": "/truth"
       }
     },
     {
