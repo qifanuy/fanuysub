@@ -16,7 +16,7 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 194.104.94.141
+  server: se3.shtil.io
   port: 443
   udp: true
   type: vless
@@ -24,7 +24,6 @@ proxies:
   tls: true
   servername: se3.shtil.io
   skip-cert-verify: false
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
