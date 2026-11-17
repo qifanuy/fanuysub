@@ -44,13 +44,13 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-      "server": "104.171.133.213",
+      "server": "129.101.100.219",
       "server_port": 443,
       "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "mirror-75.topp-con.xyz",
+        "server_name": "db-28.topp-con.xyz",
         "insecure": false,
         "alpn": [
           "h2",
