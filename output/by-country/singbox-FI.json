@@ -4,25 +4,31 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "172.67.67.89",
-      "server_port": 2083,
-      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
+      "server": "static.28.210.29.2.clients.your-server.de",
+      "server_port": 25565,
+      "method": "chacha20-ietf-poly1305",
+      "password": "C8ZJ7R4p_HHJ32cst7ilT-0Zi2F22hAc"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "107.181.151.128",
+      "server_port": 443,
+      "uuid": "88742d38-3f5c-4b9c-b256-7df5db8257ec",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vipfree.dr-ping.ir",
-        "insecure": false,
+        "server_name": "www.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vipfree.dr-ping.ir"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
+          "short_id": "8f79726c5002"
         }
       }
     },
@@ -31,14 +37,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
