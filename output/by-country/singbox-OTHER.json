@@ -6,23 +6,26 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.67.139.189",
-      "server_port": 443,
-      "uuid": "43BCAE0A-10A6-4003-8615-BD510F4215BA",
+      "server": "104.17.70.206",
+      "server_port": 8443,
+      "uuid": "3692de53-42e6-4aed-a522-40ec355dcd2f",
       "tls": {
         "enabled": true,
-        "server_name": "fr-free.fastestrelay.com",
+        "server_name": "free.sahanwickramasinghe.com",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/700gvl-us-free",
+        "path": "/",
         "headers": {
-          "Host": "fr-free.fastestrelay.com"
+          "Host": "free.sahanwickramasinghe.com"
         }
       }
     },
