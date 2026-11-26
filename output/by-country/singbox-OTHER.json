@@ -5,35 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "143.246.136.128",
-      "server_port": 50738,
-      "uuid": "56665684-5ac0-4ba9-9d49-8b258fb57974",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.27.97.42",
+      "server_port": 8443,
+      "uuid": "3692de53-42e6-4aed-a522-40ec355dcd2f",
       "tls": {
         "enabled": true,
-        "server_name": "turkey-ip1.mmdaqaorg.xyz",
+        "server_name": "free.sahanwickramasinghe.com",
         "insecure": false,
         "alpn": [
-          "h2",
           "http/1.1"
         ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "v2new.nimbaha9.ir",
-      "server_port": 8080,
-      "uuid": "308230a0-0097-4158-98d7-8f09bf339d60",
+      },
       "transport": {
         "type": "ws",
-        "path": "/XDS45",
         "headers": {
-          "Host": "v2new.nimbaha9.ir"
+          "Host": "free.sahanwickramasinghe.com"
         }
       }
     },
@@ -42,16 +33,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
