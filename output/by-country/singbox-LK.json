@@ -4,17 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
-      "server": "170.114.45.6",
+      "server": "98.98.142.161",
       "server_port": 8080,
-      "uuid": "990bf436-f1b9-4e7f-857d-14378acc4ae5",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "free.nadun.store"
-        }
-      }
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "selector",

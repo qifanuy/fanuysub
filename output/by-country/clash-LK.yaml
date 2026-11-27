@@ -5,16 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  server: 170.114.45.6
+  server: 98.98.142.161
   port: 8080
   udp: true
-  type: vless
-  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 proxy-groups:
 - name: PROXIES
   type: select

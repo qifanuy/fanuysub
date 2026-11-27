@@ -4,16 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
-      "server": "v2new.nimbaha9.ir",
-      "server_port": 8080,
-      "uuid": "f279c19a-b324-40cf-af57-049f9b1b68f2",
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/XDS45",
+        "path": "/vmess/",
         "headers": {
-          "Host": "v2new.nimbaha9.ir"
+          "Host": "38.107.234.57"
         }
       }
     },
@@ -22,14 +23,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
